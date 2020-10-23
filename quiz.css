@@ -1,0 +1,91 @@
+h1{
+			font-size: 30px;
+		}
+		body{
+
+			font-style: oblique;
+			background:#000;
+			color: #e3d057f5;
+			font-family:  serif;
+			font-size: 21px;
+		}
+
+		#tiiit{
+			font-size: 55px;
+
+		}
+		footer{
+
+			color: darkkhaki;
+			font-weight: 666;
+
+		}
+
+		#container{
+			width: 72%;
+			background: #662d2d;
+			margin: 20px auto;
+			overflow: auto;
+			padding: 25px;
+		}
+		header{
+			text-align: center;
+			border-bottom: black dashed 4px;
+		}
+		header h1{
+			margin: 0;
+			padding: 0;
+		}
+		header p{
+			padding: 0;
+			margin-top: 5px;
+
+		}
+		section{
+			min-height: 400px;
+		}
+		footer{
+
+			text-align: center;
+		}
+		input{
+
+			font-style: oblique;
+			font-size: 30px;
+		}
+		.xx:hover{
+			background: #e3d057f5;
+			color: black;
+
+		}
+		button:hover{
+			background: #e3d057f5;
+			color: black;
+		}
+		button{
+			margin-left: 50px;
+			font-style: oblique;
+			font-weight: 555;
+			background: black;
+			color: #662d2d;
+			border: 1px;
+			border-radius: 20px; 
+			padding: 10px 10px;
+			cursor: pointer;
+			font-size: 20px;
+
+		}
+		input[type='submit']{
+			font-style: oblique;
+			font-weight: 555;
+			background: black;
+			color: #662d2d;
+			border: 1px;
+			border-radius: 21px; 
+			padding: 10px 15px;
+			cursor: pointer;
+			font-size: 25px;
+		}
+		strong{
+			font-size: 19px;
+		}

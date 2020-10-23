@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz on Java</title>
+<script src="quiz.js"></script>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+	<div id="container">
+		<header>
+			<h1 id="tiiit">Java Quiz</h1><br>
+			<p>Test your knowledge in <strong>Java fundamentals</strong></p><br>
+		</header>
+		<section>
+			<div id="results"></div>
+			<form name="quizForm" onsubmit="return submitAnswers()">
+				<br>
+				<h1>1. When did <b>Oak</b> was renamed <b>Java</b>?</h1>
+				<input type="radio" name="q1" value="a" id="q1a">a. 1992 <br>
+				<input type="radio" name="q1" value="b" id="q1b">b. 1994 <br>
+				<input type="radio" name="q1" value="c" id="q1c">c. 1997 <br>
+				<input type="radio" name="q1" value="d" id="q1d">d. 1990 <br>
+
+				<h1>2. Which of the following is not a Java feature?</h1>
+				<input type="radio" name="q2" value="a" id="q2a">a. Dynamic <br>
+				<input type="radio" name="q2" value="b" id="q2b">b. Architecture Neutral <br>
+				<input type="radio" name="q2" value="c" id="q2c">c. Use of pointers <br>
+				<input type="radio" name="q2" value="d" id="q2d">d. Object-oriented <br>
+
+				<h1>3. Which of the following for loop declaration is not valid?</h1>
+				<input type="radio" name="q3" value="a" id="q3a">a. for ( int i = 99; i >= 0; i / 9 ) <br>
+				<input type="radio" name="q3" value="b" id="q3b">b. for ( int i = 7; i <= 77; i += 7 ) <br>
+				<input type="radio" name="q3" value="c" id="q3c">c. for ( int i = 20; i >= 2; - - i ) <br>
+				<input type="radio" name="q3" value="d" id="q3d">d. for ( int i = 2; i <= 20; i = 2* i ) <br>
+
+				<h1>4. Which package contains the Random class?</h1>
+				<input type="radio" name="q4" value="a" id="q4a">a. java.util package <br>
+				<input type="radio" name="q4" value="b" id="q4b">b. java.lang package <br>
+				<input type="radio" name="q4" value="c" id="q4c">c. java.awt package <br>
+				<input type="radio" name="q4" value="d" id="q4d">d. java.io package <br>
+
+				<h1>5. Which of the following is an immediate subclass of the Panel class?</h1>
+				<input type="radio" name="q5" value="a" id="q5a">a. Applet class <br>
+				<input type="radio" name="q5" value="b" id="q5b">b. Window class <br>
+				<input type="radio" name="q5" value="c" id="q5c">c. Frame class <br>
+				<input type="radio" name="q5" value="d" id="q5d">d. Dialog class <br>
+
+				<h1>6. Which keyword is used for accessing the features of a package?</h1>
+				<input type="radio" name="q6" value="a" id="q6a">a. package <br>
+				<input type="radio" name="q6" value="b" id="q6b">b. import <br>
+				<input type="radio" name="q6" value="c" id="q6c">c. extends <br>
+				<input type="radio" name="q6" value="d" id="q6d">d. export <br>
+
+				<h1>7. Which of the given methods are of Object class?</h1>
+				<input type="radio" name="q7" value="a" id="q7a">a. notify(), wait( long msecs ), and synchronized() <br>
+				<input type="radio" name="q7" value="b" id="q7b">b. wait( long msecs ), interrupt(), and notifyAll() <br>
+				<input type="radio" name="q7" value="c" id="q7c">c. notify(), notifyAll(), and wait() <br>
+				<input type="radio" name="q7" value="d" id="q7d">d. sleep( long msecs ), wait(), and notify() <br>
+
+				<h1>8. How many threads can be executed at a time?</h1>
+				<input type="radio" name="q8" value="a" id="q8a">a. Only one thread <br>
+				<input type="radio" name="q8" value="b" id="q8b">b. Only main (main() method) thread <br>
+				<input type="radio" name="q8" value="c" id="q8c">c. Multiple threads <br>
+				<input type="radio" name="q8" value="d" id="q8d">d. Two threads <br>
+
+				<h1>9.What is the output of this program?<br><br>
+				class Test {<br>
+				public static void swap(Integer i, Integer j) {<br>
+				Integer temp = new Integer(i);<br>
+				i = j;<br>
+				j = temp;<br>
+				}<br>
+				public static void main(String[] args) {<br>
+				Integer i = new Integer(10);<br>
+				Integer j = new Integer(20);<br>
+				swap(i, j);<br>
+				System.out.println("i = " + i + ", j = " + j);<br>
+				}<br>
+				}</h1>
+				<input type="radio" name="q9" value="a" id="q9a">a. i = 10, j = 20 <br>
+				<input type="radio" name="q9" value="b" id="q9b">b. i = 20, j = 10 <br>
+				<input type="radio" name="q9" value="c" id="q9c">c. i = 10, j = 10 <br>
+				<input type="radio" name="q9" value="d" id="q9d">d. i = 20, j = 20 <br>
+
+				<h1>10.What's the output of the following code?<br><br>
+				class Main {<br>
+				public static void main(String args[]) {<br> 
+				System.out.println(fun());<br>
+				} <br>
+
+				int fun()<br>
+				{<br>
+				return 20;<br>
+				}<br>
+				}</h1>
+				<input type="radio" name="q10" value="a" id="q10a">a. 20 <br>
+				<input type="radio" name="q10" value="b" id="q10b">b. 0 <br>
+				<input type="radio" name="q10" value="c" id="q10c">c. comilation error <br>
+				<input type="radio" name="q10" value="d" id="q10d">d. garbage value <br>
+				<br>
+				<br>
+				<div class="form-group">
+  			    <div class="form-check">
+   			    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+   			    <label class="form-check-label" for="invalidCheck">
+    		    I Agree to the terms and conditions
+    		    </label><br>
+    		    <div class="invalid-feedback">
+     		    You must agree before submitting.<br>
+      </div>
+    </div>
+  </div>
+  				<br><br>
+				<input type="submit" value="Submit Answers" class="xx"><br>
+			</form>
+			<br><button onClick="window.location.reload()" type="submit">Try Again ?</button>
+		</section>
+
+		<footer>
+			<br>
+			<br>
+			<address>
+				Md Sohail Uddin <br>
+				9121586506 <br>
+				mdsohailuddin62699@gmail.com
+			</address>
+			<p>Copyright &copy; 2020, All Rights Reserved.</p>
+		</footer>
+	</div>
+	<script src="quiz.js"></script>
+</body>
+</html>
